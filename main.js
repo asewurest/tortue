@@ -511,7 +511,7 @@ const menu = (() => {
     return { element, update_for_language, switch_screen, done_loading, button_actions };
 })();
 
-menu.update_for_language(localStorage.getItem('lang') || 'en');
+menu.update_for_language(localStorage.getItem('lang') || 'fr');
 // menu.update_for_language('fr');
 menu.switch_screen('main');
 
