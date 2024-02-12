@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>non.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <canvas></canvas>
+  <img id="crosshair" src="xh.png" width="10" height="10">
+  <div id="menu">
+    <div id="main">
+      <span id="loading">(...)</span>
+      <br id="remove-after-loading">
+      <button id="play">(...)</button>
+      <br>
+      <button id="level-select">(...)</button>
+      <br>
+      <button id="go-to-settings">(...)</button>
+      <br>
+      <button id="restart">(...)</button>
+      <br>
+      <button id="reset">(...)</button>
+    </div>
+    <div id="settings">
+      <span class="text-shadow"><span id="sens-text">(...)</span>: <span id="sens-value">(...)</span> <input type="range" id="sens" min="1" max="100" step="0.5"></span>
+      <br>
+      <button id="french">Français</button>
+      <br>
+      <button id="english">English</button>
+      <br>
+      <button id="back">(...)</button>
+    </div>
+    <div id="level-selector"></div>
+    <div id="victory">
+      <span id="victory-message">(...)</span>
+      <br>
+      <button id="continue">(...)</button>
+    </div>
+  </div>
+  <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+          }
+        }
+    </script>
+  <noscript>this is a 3D game, and it won't work without JS. I will not bother making a whole 3D game with only HTML &
+    CSS.</noscript>
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>

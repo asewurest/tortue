@@ -1,0 +1,73 @@
+canvas,
+#menu {
+    position : fixed;
+    left     : 0;
+    top      : 0;
+}
+
+#menu {
+    width      : fit-content;
+    height     : fit-content;
+    position   : fixed;
+    left       : 50vw;
+    top        : 50vh;
+    transform  : translate(-50%, -50%);
+    text-align : center;
+}
+
+#crosshair {
+    position        : fixed;
+    left            : calc(50vw - 5px);
+    top             : calc(50vh - 5px);
+    pointer-events  : none;
+    image-rendering : pixelated;
+    transform       : scale(1);
+    transition      : transform 0.3s;
+}
+
+.hidden {
+    display : none;
+}
+
+button {
+    border-radius    : 0;
+    background-color : blueviolet;
+    color            : white;
+    padding          : 5px;
+    border           : 2px solid rgb(111, 60, 158);
+    cursor           : grab;
+    transition       : border 0.5s, background-color 0.5s;
+    margin           : 3px;
+}
+
+button:active {
+    cursor : grabbing;
+}
+
+button:hover {
+    background-color : rgb(172, 100, 240);
+    border           : 2px solid rgb(133, 81, 182);
+}
+
+#loading {
+    user-select : none;
+}
+
+* {
+    color: white;
+}
+
+button.disabled {
+    background-color : grey;
+    border           : 2px solid lightgrey;
+    cursor           : not-allowed;
+}
+
+#victory-message, .text-shadow {
+    text-shadow: 0 0 4px black;
+}
+
+#sens-value {
+    min-width : 3em;
+    display   : inline-block;
+}
