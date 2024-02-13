@@ -240,7 +240,7 @@ player_object.node.add(l);
 const raycaster = new THREE.Raycaster();
 raycaster.far = 3;
 
-const LEVEL_COUNT = 8;
+const LEVEL_COUNT = 7;
 let levels = [];
 let level = {
     scene: new THREE.Scene(),
