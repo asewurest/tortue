@@ -339,7 +339,7 @@ function is_colliding(rigidbody) {
 }
 
 let sensitivity   = parseFloat(localStorage.getItem('sens') || '0.4');
-let last_language = 'fr';
+let last_language = 'en';
 
 const menu = (() => {
     let full_ = false;
